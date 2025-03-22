@@ -1,34 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
- <meta charset="utf-8">
+    <meta charset="utf-8">
     <title>AR.js HIRO Test</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.min.js"></script>
   </head>
   <body>
-
-
+    <a-scene embedded arjs vr-mode-ui="enabled: false">
       <a-assets>
         <a-asset-item id="mcdonalds_menu" src="assets/models/mcdonalds_menu.glb"></a-asset-item>
       </a-assets>
 
       <a-marker type="pattern" url="assets/marker.patt">
-       <a-entity gltf-model="#mcdonalds_menu" position="0 0 -1" scale="0.5 0.5 0.5"></a-entity>
+        <a-entity gltf-model="#mcdonalds_menu" position="0 0 -1" scale="0.5 0.5 0.5"></a-entity>
       </a-marker>
 
-      <a-entity camera camera="fov: 80"></a-entity>
+      <a-entity camera="fov: 80"></a-entity>
     </a-scene>
   </body>
 </html>
-
-
-
-
-    <a-scene embedded arjs vr-mode-ui="enabled: false">
- 
 
    
   
